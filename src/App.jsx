@@ -51,7 +51,7 @@ export default function DroneWalkthroughGenerator() {
       addLog('Calling Claude API with VIEWMAX MCP server...');
       setProgress('Generating 23 cinematic drone-style video clips...');
 
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api/generate-walkthrough', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
